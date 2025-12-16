@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: daily_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/code/app          # Hot-reload: Editas en Windows, cambia en Docker
+      - ./data:/code/data        # Persistencia de BD
+      - ./static:/code/static    # Persistencia de Imágenes
+    env_file:
+      - .env
+    restart: unless-stopped

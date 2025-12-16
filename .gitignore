@@ -1,0 +1,40 @@
+# --- SISTEMA OPERATIVO & IDEs ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# --- PYTHON (BACKEND) ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+*.log
+
+# --- NODE.JS / REACT (FRONTEND) ---
+node_modules/
+dist/
+build/
+.npm/
+*.local
+
+# --- SECRETOS (NUNCA SUBIR) ---
+.env
+.env.production
+
+# --- BASE DE DATOS (NO SUBIR) ---
+*.db
+*.sqlite3
+/data/*
+!/data/.gitkeep
+
+# --- UPLOADS / IMÁGENES (NO SUBIR) ---
+# Ignoramos el contenido de las imágenes, pero mantenemos la estructura de carpetas
+static/images/*
+!static/images/.gitkeep
+
+# --- DOCKER ---
+.docker/
